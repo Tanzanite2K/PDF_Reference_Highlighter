@@ -1,0 +1,138 @@
+/* ================================
+   NEW PDF Highlighter UI THEME
+   Dark + Glassmorphism + Smooth UI
+   ================================ */
+
+.pdf-highlighter-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at top, #0f172a, #1e293b);
+  font-family: "Inter", sans-serif;
+  color: #e2e8f0;
+}
+
+/* ---------- Header ---------- */
+
+.app-header {
+  backdrop-filter: blur(14px);
+  background: rgba(30, 41, 59, 0.6);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: rgba(0, 0, 0, 0.4) 0 4px 12px;
+}
+
+.header-content {
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: -0.03em;
+}
+
+/* ---------- Upload Section ---------- */
+
+.upload-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upload-button {
+  padding: 0.6rem 1.4rem;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.upload-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.file-name {
+  max-width: 200px;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---------- Main Content Layout ---------- */
+
+.main-content {
+  flex: 1;
+  display: flex;
+  max-width: 1600px;
+  margin: 1.5rem auto;
+  width: 100%;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+/* ---------- PDF Viewer Panel ---------- */
+
+.pdf-viewer-container {
+  flex: 0 0 68%;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 8px 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- Reference Panel ---------- */
+
+.references-container {
+  flex: 0 0 32%;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 8px 24px;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Scrollbar Styling */
+.references-container::-webkit-scrollbar,
+.pdf-viewer-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.references-container::-webkit-scrollbar-thumb,
+.pdf-viewer-container::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .pdf-viewer-container,
+  .references-container {
+    width: 100%;
+    flex: none;
+  }
+}
