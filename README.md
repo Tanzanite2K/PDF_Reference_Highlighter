@@ -6,6 +6,7 @@ This project is a React-based PDF viewer that lets you click a reference like **
 
 It’s designed for documents where you constantly jump between a reference and the source text — things like annual reports, research papers, legal documents, or technical specs.
 
+Deployment Link - https://pdf-reference-highlighter.vercel.app/
 ---
 
 ## ✨ What this tool does
